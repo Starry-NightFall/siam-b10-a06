@@ -1,40 +1,31 @@
 # Peddy - Pet Adoption Platform
 
-**Welcome to Assignment 6 !!!**
-In this assignment You have to create a pet adoption platform where users can browse and adopt pets. We will provides you APIs to fetch pet-related data such as all pets, categories of pets, and specific pet details , pet data based on category
-
-## Private For your Assignment
-
-you have to create private repo in our Google Classroom . here is the Link
-
-# [https://classroom.github.com/a/gUlZfxsK](https://classroom.github.com/a/gUlZfxsK)
-
 ## APIs
 
 The following APIs are available in Peddy:
 
 1. **Fetch All Pets**
 
-   - **Endpoint:** [https://openapi.programming-hero.com/api/peddy/pets](https://openapi.programming-hero.com/api/peddy/pets)
+   - **Endpoint:** [Pets](https://openapi.programming-hero.com/api/peddy/pets)
    - **Description:** Retrieves a list of all available pets for adoption. The data includes details like pet name, type, age, and adoption status.
 
 2. **Fetch Pet Details by ID**
 
    - **Endpoint:**`https://openapi.programming-hero.com/api/peddy/pet/pet-id`
 
-   - **Example:** [https://openapi.programming-hero.com/api/peddy/pet/1](https://openapi.programming-hero.com/api/peddy/pet/1)
+   - **Example:** [Details By ID](https://openapi.programming-hero.com/api/peddy/pet/1)
    - **Description:** Fetches detailed information for a specific pet based on its ID. This can be used to view additional information about the pet such as vacination history, description
 
 3. **Fetch All Pet Categories**
 
-   - **Endpoint:** [https://openapi.programming-hero.com/api/peddy/categories](https://openapi.programming-hero.com/api/peddy/categories)
+   - **Endpoint:** [Categories](https://openapi.programming-hero.com/api/peddy/categories)
 
    - **Description:** Fetches a list of all pet categories available in the platform, such as dogs, cats, rabbit , bird, etc.
 
 4. **Fetch Pets by Category**
 
    - **Endpoint:** `https://openapi.programming-hero.com/api/peddy/category/categoryName`
-   - **Example:** [https://openapi.programming-hero.com/api/peddy/category/dog](https://openapi.programming-hero.com/api/peddy/category/dog)
+   - **Example:** [Details By Category](https://openapi.programming-hero.com/api/peddy/category/dog)
 
    - **Description:** Fetches data of pets under a specific category, in this case, dogs. This can be used to filter pets based on their category.
 
