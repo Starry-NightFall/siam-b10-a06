@@ -1,37 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Peddy Pets</title>
-  <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peddy Pets</title>
+    <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      .text-primary {
+        color: #0e7a81;
+      }
+      .bg-primary {
+        background: #0e7a81;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="flex justify-around items-center bg-[#1abbc749]/20 shadow h-16">
+        <div class="font-semibold font-mono text-2xl">
+          <div class="flex gap-4 items-center">
+            <img src="images/logo.webp" />
+            <p>PEDDY</p>
+          </div>
+        </div>
+        <div>
+          <ul class="flex gap-4 text-gray-600">
+            <li>Home</li>
+            <li>Shop</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="scale-150 text-gray-800">
+          <i class="hgi hgi-stroke hgi-user-circle-02"></i>
+        </div>
+      </nav>
 
-  <!-- COLOR: #0E7A81 -->
-
-  <header>
-    <nav class="flex justify-around items-center bg-[#1abbc749]/20 shadow h-16">
-      <div class="font-semibold font-mono text-2xl">PEDDY</div>
-      <div>
-        <ul class="flex gap-4 text-gray-600">
-          <li>Home</li>
-          <li>Shop</li>
-          <li>Contact</li>
-        </ul>
+      <div class="w-full text-center">
+        <div class="text-xl my-6 w-fit mx-auto text-gray-700 flex gap-3 items-center">
+          <p>Bringing Families Together</p>
+          <i class="hgi hgi-stroke hgi-favourite text-red-900 font-extrabold"></i>
+        </div>
+        <h1 class="text-5xl my-5 font-bold">Your Path to Adoption<br />Starts Here</h1>
+        <p class="my-8 text-gray-800">It is a long established fact that a reader will be distracted by the readable content of a page when looking<br />at its layout. The point of using Lorem Ipsum is that it has a.</p>
+        <button class="bg-primary px-6 py-2 rounded-lg text-lg text-white">Buy Now</button>
+        <img class="mx-auto" src="images/pet.webp" />
       </div>
-      <div class="scale-150 text-gray-800">
-        <i class="hgi hgi-stroke hgi-user-circle-02"></i>
-      </div>
-    </nav>
-  </header>
+    </header>
 
-  <main>
-  </main>
+    <main></main>
 
-  <footer>
-  </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
