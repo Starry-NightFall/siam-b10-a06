@@ -6,7 +6,11 @@
     <title>Peddy Pets</title>
     <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <style>
+      * {
+        scroll-behavior: smooth;
+      }
       .text-primary {
         color: #0e7a81;
       }
@@ -40,26 +44,51 @@
 
       <!-- HERO -->
       <div class="w-full text-center">
-        <div class="text-xl my-6 w-fit mx-auto text-neutral-700 flex gap-3 items-center">
+        <div class="text-xl mt-8 mb-5 w-fit mx-auto text-neutral-700 flex gap-3 items-center">
           <p>Bringing Families Together</p>
           <i class="hgi hgi-stroke hgi-favourite text-red-900 font-extrabold"></i>
         </div>
         <h1 class="text-6xl my-5 font-bold">Your Path to Adoption<br />Starts Here</h1>
         <p class="my-8 text-neutral-800">It is a long established fact that a reader will be distracted by the readable content of a page when looking<br />at its layout. The point of using Lorem Ipsum is that it has a.</p>
-        <button class="bg-primary px-6 py-2 rounded-lg text-lg text-white">Buy Now</button>
+        <button onclick="window.location.href='#main'" class="bg-primary px-6 py-2 rounded-lg text-lg text-white">Buy Now</button>
         <img class="mx-auto" src="images/pet.webp" />
       </div>
     </header>
 
     <!-- Main Section -->
-    <main class="mt-16">
+    <main class="mt-16" id="main">
       <!-- ADOPT PETS SECTION -->
       <section>
         <div class="text-center">
           <h2 class="text-5xl font-bold">Adopt your best friend</h2>
           <p class="my-4 text-neutral-600">It is a long established fact that a reader will be distracted by the readable content of a<br />page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
         </div>
+        <div class="flex justify-between my-8 px-20">
+          <p class="font-bold text-xl">Best Deal for You</p>
+          <button class="bg-primary text-white px-4 py-2 rounded-lg">Sort by Price</button>
+        </div>
         <div id="categories" class="flex justify-between px-20"></div>
+
+        <!-- PETS SHOWCASE + CART -->
+        <div>
+          <!-- Pets showcase -->
+          <div class="grid grid-cols-3">
+            <div class="card bg-base-100 w-96 shadow-sm">
+              <figure class="px-10 pt-10">
+                <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Card Title</h2>
+                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                <div class="card-actions">
+                  <button class="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Cart -->
+          <div id="cart"></div>
+        </div>
       </section>
     </main>
 
