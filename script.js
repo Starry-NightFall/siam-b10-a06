@@ -7,7 +7,7 @@ const fetchAllCategory = async () => {
 
   data.categories.forEach((category) => {
     const div = document.createElement("div");
-    div.classList = "text-xl flex bg-slate-200 p-6 rounded-xl";
+    div.classList = "text-xl flex bg-slate-200 active:bg-transparent active:border-2 active:border-slate-500 px-6 active:px-5 py-4 active:py-3 rounded-xl";
     div.innerHTML = `<image class="size-10 block" src="${category.category_icon}"> <button class="block">${category.category}</button>`;
     categoryContainer.appendChild(div);
   });
@@ -18,13 +18,11 @@ const fetchAllPets = async () => {
   const data = await (await fetch(url)).json();
 
   data.pets.map(({ breed, category, date_of_birth, gender, image, petID, pet_details, pet_name, price, vaccinated_status }) => {
-    // console.log(pet);
-
     const div = document.createElement("div");
     div.innerHTML = `
       <div class="card bg-base-100 w-auto border-2 border-neutral-200">
         <figure class="px-4 pt-4">
-          <img src="${image}" alt="${pet_name}" class="rounded-lg aspect-5/2 object-fill" />
+          <img src="${image}" alt="${pet_name}" class="rounded-lg w-full h-60 object-cover" />
         </figure>
         <div class="card-body">
           <h2 class="card-title !text-2xl !font-bold">${pet_name}</h2>
