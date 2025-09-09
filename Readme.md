@@ -36,12 +36,14 @@ The following APIs are available in Peddy:
 - Implement the navbar as per the Figma design.
 - Ensure it is responsive across Desktop, Tablet, and Mobile devices.
 - The navbar should collapse into a mobile menu on smaller screens.
+  - [ ] Done
 
 ### 2. **Banner Section**
 
 - Design the banner section as per Figma design.
 - Include a "View More" button that, when clicked, scrolls down to the “Adopt Your Best Friend” section.
 - Ensure the banner is fully responsive.
+  - [ ] Done
 
 ### 3. **Adopt Your Best Friend Section**
 
@@ -60,42 +62,51 @@ The following APIs are available in Peddy:
     - Price
     - Buttons: "Like", "Adopt", and "Details"
   - If any field is missing from the API response, handle it by displaying a placeholder or meaningful message.
+  - [ ] Done
 - **Right Side**:
   - Clicking the "Like" button should add the pet's thumbnail to the right-side grid.
   - Display a 2-column layout for liked pet thumbnails.
+  - [ ] Done
 
 ### 4. **Modal Window**
 
 - When the "Details" button is clicked, open a modal that displays all pet information like figma
 - The modal should close when the user clicks close button.
+- [ ] Done
 
 ### 5. **Footer**
 
 - Implement the footer as per the Figma design.
 - Ensure it is responsive.
+- [ ] Done
 
 ### 6. **Responsive Design**
 
 - The entire platform must be responsive and functional on Desktop, Tablet, and Mobile devices.
 - Use Tailwind CSS breakpoints for responsiveness.
+- [ ] Done
 
 ## Challenges
 
 ### 1. **Loading Spinner**
 
 - Display a loading spinner for at least 2 seconds when fetching data from the API.
+- [ ] Done
 
 ### 2. **Sort by Price**
 
 - Implement sorting functionality for pets. When the "Sort by Price" button is clicked, sort pets in descending order based on price . sorting on active category is recommended but if you can sort all the data you will get full mark for this requirement.
+- [ ] Done
 
 ### 3. **Adopt Button Behavior**
 
 - Implement an adoption process. When the "Adopt" button is clicked, show a countdown (3, 2, 1) and then change the button text to "Adopted."
+- [ ] Done
 
 ### 4. **Handle Null or Undefined Values**
 
 - If any values from the API (e.g., pet breed, birth date) are null or undefined, display a placeholder or relevant message instead of leaving it blank.
+- [ ] Done
 
 ## 5. A beautiful README.md File
 
@@ -106,10 +117,12 @@ Ensure the final project includes a `README.md` file with the following details:
 - 5 key features of the project.
 - ES6 features used.
 - Live link to the deployed project.
+- [ ] Done
 
 ## What to Submit
 
 - Your Private Github Repo Link
 - Your Live Link
+- [ ] Done
 
 # Best of Luck
