@@ -119,10 +119,4 @@ Ensure the final project includes a `README.md` file with the following details:
 - Live link to the deployed project.
 - [ ] Done
 
-## What to Submit
-
-- Your Private Github Repo Link
-- Your Live Link
-- [ ] Done
-
 # Best of Luck

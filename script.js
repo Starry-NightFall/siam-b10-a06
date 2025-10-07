@@ -17,7 +17,7 @@ const fetchAllPets = async () => {
   const url = "https://openapi.programming-hero.com/api/peddy/pets";
   const data = await (await fetch(url)).json();
 
-  data.pets.map(({ breed, category, date_of_birth, gender, image, petID, pet_details, pet_name, price, vaccinated_status }) => {
+  data.pets.map(({ breed, category, date_of_birth, gender, image, petId, pet_details, pet_name, price, vaccinated_status }) => {
     const div = document.createElement("div");
     div.innerHTML = `
       <div class="card bg-base-100 w-auto border-2 border-neutral-200">
@@ -47,7 +47,7 @@ const fetchAllPets = async () => {
           <div class="card-actions flex justify-around gap-3">
             <button class="btn btn-outline text-primary"><i class="hgi hgi-stroke hgi-thumbs-up"></i></button>
             <button class="btn btn-outline text-primary">Adopt</button>
-            <button class="btn btn-outline text-primary">Details</button>
+            <button onclick="showPetDetailsByID(${petId})" class="btn btn-outline text-primary">Details</button>
           </div>
         </div>
       </div>
@@ -55,6 +55,31 @@ const fetchAllPets = async () => {
 
     petsContianer.appendChild(div);
   });
+};
+
+const showPetDetailsByID = async (id) => {
+  const url = `https://openapi.programming-hero.com/api/peddy/pet/${id}`;
+  const data = await (await fetch(url)).json();
+  console.log(data);
+
+  const { breed, category } = data.petData;
+  data.petdata;
+
+  const div = document.createElement("div");
+  div.innerHTML = `
+  <dialog class="my_modal_3" class="modal">
+  <div class="modal-box">
+  <form method="dialog">
+  <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+  </form>
+  <h3 class="text-lg font-bold">Hello!</h3>
+  <p class="py-4">${breed}</p>
+  </div>
+  </dialog>
+  `;
+  document.body.appendChild(div);
+
+  my_modal_3.showModal();
 };
 
 fetchAllCategory();
